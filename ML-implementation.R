@@ -98,6 +98,8 @@ result <- add_row(result, method = "Linear Discriminant Analysis",
                   accuracy = mean(y_hat_lda == test_set$Survived),
                   F1_score = F_meas(data = y_hat_lda, reference = test_set$Survived))
 
+result %>% knitr::kable()
+  
 ## Final Model
 ## Random Forest
 
